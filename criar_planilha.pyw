@@ -105,7 +105,7 @@ def criar_planilhas_no_mesmo_arquivo(dados, nome_arquivo_saida):
         ws = wb.create_sheet(title=produto)
         ws['A1'] = produto
         ws['B1'] = "Exemplo de informação legal. CET: {cet}% e CET a.a {cet_aa}%"
-        ws.append(["parcela", "fator", "Juros", "IOF", "Taxa CET"])
+        ws.append(["Parcela", "Fator", "Juros", "IOF", "Taxa CET"])
         ws.append([qtd_parcelas, round(fator,6), round(taxa_mensal,6), 0, round(cet_anual,6)])
 
     wb.save(nome_arquivo_saida)
